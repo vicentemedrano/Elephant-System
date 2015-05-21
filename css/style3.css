@@ -1,0 +1,305 @@
+html,body,div,span,h1,h2,h3,h4,h5,h6,pre,a,img,nav ul,nav li,tr,th,td,footer,menu,nav,output{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+
+/*Margenes para seccion de Mesas*/
+ol,ul{list-style:none;margin:0;padding:0;}
+
+/* Letras sin decoración */
+a{text-decoration:none;}
+
+/*Tamaño del Logotipo*/
+img{max-width:100%;}
+
+
+@font-face {
+     font-family: 'open_sansregular';
+      src:url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+}
+
+body {
+	background:url('../images/Fondo.jpg');
+	background-size:100% 100%;
+	font-family: 'open_sansregular';
+	font-size: 100%;
+}
+
+/*Tamaño para los div*/
+.wrap{
+	margin:0 auto;
+	width:80%;
+}
+/* Tamaño para div */
+.main{
+	padding: 1% 2%;
+}
+
+/* Posicion de los Div (Comanda) */
+.grid1_of_1 {
+	float: left;
+	width: 72.33333%;
+	margin-right: 3.33333%;
+}
+
+/*Tamaño de pantalla o margen */
+.menu{
+	margin-bottom: 4%;
+}
+
+/*Posicion de los div (Mesas)*/
+.mcd-menu {
+	font-family: 'Montserrat', sans-serif;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	background: #FFF;
+	height: 100px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+/*Listas en Horizontal*/
+.mcd-menu li {
+	width: 20%;
+	float: left;
+	position: relative;
+}
+
+/*Diseño de menu*/
+.mcd-menu li a {
+	display: block;
+	text-decoration: none;
+	padding: 23px 20px;
+	text-align: center;
+	color: #777;
+	border-right: 1px solid #E7E7E7;
+}
+
+
+/*Iconos de Menu*/
+.mcd-menu li a i {
+	width: 34px;
+	height: 34px;
+	display: inline-block;
+	background: url(../images/nav_icon.png) no-repeat;
+	vertical-align: middle;
+	transition: none;
+	margin: 0 auto;
+}
+
+
+/*posicion de los iconos, y Animación (focus)*/
+.mcd-menu li  a > i.icon1{
+	background-position:0px 0px;
+}
+.mcd-menu li a:hover > i.icon1{
+	background-position:0px -46px;
+}
+.mcd-menu li  a > i.icon2{
+	background-position: -42px 0px;
+}
+.mcd-menu li a:hover > i.icon2{
+	background-position: -42px -46px;
+}
+.mcd-menu li  a > i.icon3{
+	background-position:-86px -46px;
+}
+.mcd-menu li a:hover > i.icon3{
+	background-position:-86px -46px;
+}
+.mcd-menu li  a > i.icon4{
+	background-position:-130px 0px;
+}
+.mcd-menu li a:hover > i.icon4{
+	background-position:-130px -46px;
+}
+.mcd-menu li  a > i.icon5{
+	background-position:-180px 0px;
+}
+.mcd-menu li a:hover > i.icon5{
+	background-position:-180px -46px;
+}
+
+
+.mcd-menu li a strong {
+	display: block;
+	text-transform: capitalize;
+	font-size: 1em;
+}
+
+
+/*Focus en el Menu*/
+.mcd-menu li:hover > a {
+ 	color: #EC2D00;
+
+}
+
+
+/*Animacion en Menu*/
+.mcd-menu li a.active,.mcd-menu li a:hover {
+	position: relative;
+	color: #EC2D00;
+	border: 0;
+	border-top: 8px solid #EC2D00;
+	border-bottom: 8px solid #EC2D00;
+	margin-top: -7px;
+	box-shadow: inset -1px 0px 0px #e7e7e7;
+	-webkit-box-shadow: inset -1px 0px 0px #e7e7e7;
+	-moz-box-shadow: inset -1px 0px 0px #e7e7e7;
+	-o-box-shadow: inset -1px 0px 0px #e7e7e7;
+}
+
+/*indicador en que parte de menu nos encontramos*/
+.mcd-menu li a.active:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 45%;
+	border-top: 8px solid #EC2D00;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+}
+
+
+/*Diseño del Form*/
+._form {
+
+	padding: 2% 1%;/*margen para alinear los botones*/
+	border-top: 8px solid rgb(255, 121, 121);
+	background: #FFF;
+	height: 455px;/*Tamaño del form*/
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+
+table {     
+	font-family: 'Montserrat', sans-serif;
+    font-size: 10px;    
+    margin:-310px 280px;     
+    width: 480px; 
+    text-align: center;    
+    border-collapse: collapse; 
+}
+
+
+td {    
+	padding: 8px;     
+	background: #e8edff;     
+	border-bottom: 1px solid #fff;
+    color: #797979;    
+    border-top: 1px solid transparent; 
+    border: 3px solid rgb(255, 121, 121);
+	font-background: #ffffff;
+	font-border-radius: 0px 0px 8px 8px;}
+
+tr:hover td { background: #d0dafd; color: #339; }
+
+
+/* Posición de Comanda */
+.grid1_of_2 {
+	float: left;
+	width:20.33333%;
+}
+
+/*Fondo para leyenda "COMANDA"*/
+.grid_text{border-top: 8px solid rgb(255, 121, 121);
+	background: #ffffff;
+	border-radius: 0px 0px 8px 8px;
+	-webkit-border-radius: 0px 0px 8px 8px;
+	-moz-border-radius: 0px 0px 8px 8px;
+	-o-border-radius: 0px 0px 8px 8px;
+}
+
+.grid_text1{
+	padding: 15px 20px;
+}
+
+/*Diseño de letra para COMANDA*/
+ h4{
+	font-size: 2.3em;
+	color: #797979;
+	text-align: center;
+	text-transform: capitalize;
+	font-weight: 700;
+	font-family: 'Montserrat', sans-serif;
+}
+
+p{
+	font-size: 1em;
+	color: #797979;
+	text-align: right;
+	font-family: 'Montserrat', sans-serif;
+
+}
+
+/*Diseño de letras para Insertar datos */
+.list1{
+	padding-bottom: 8px;
+}
+
+.list1 li.active a{
+	background: #f5f5f5;
+}
+
+.list1 li a{
+	
+	display: block;
+	padding: 15px 20px;
+	background: #ffffff;
+	color: #303030;
+	text-transform: capitalize;
+	font-size: 0.8725em;
+	transition: 0.5s ease;
+	-moz-transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+.list1 li a:hover{
+	background: #f0f0f0;
+}
+
+/*Fin de Diseño Para Insertar datos*/
+
+/*Diseño del Boton Registrar*/
+ input[type="submit"] {
+	width: 20%;
+	margin-left: 20px;
+	background: #71AF42;
+	color: #ffffff;
+	text-align:center;
+	font-family: 'open_sansregular';
+	cursor: pointer;
+	padding: 10px 8px;
+	font-size: 0.8em;
+	text-transform: uppercase;
+	-webkit-appearance: none;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-o-border-radius: 8px;
+	text-shadow: 0 2px 0 rgb(0, 0, 0);
+	-webkit-text-shadow: 0 2px 0 rgb(0, 0, 0);
+	-moz-text-shadow: 0 2px 0 rgb(0, 0, 0);
+	-o-text-shadow: 0 2px 0 rgb(0, 0, 0);
+}
+ input[type="submit"]:hover{
+	background:#9ACD32;
+}
+
+
+
+/*Ajuste de tamaño de la pagina para dispositivos*/
+@media only screen and (max-width: 1440px) and (min-width: 320px)  {
+	.wrap{
+		width:95%;
+	}
+	.span_list1 {
+		padding: 10px;
+	}
+}
